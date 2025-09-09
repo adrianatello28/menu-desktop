@@ -1,0 +1,122 @@
+.conta-digital-menu {
+  box-sizing: border-box;
+  padding: 20px 180px 40px 180px; /* Aumentado a 180px */
+  background-color: white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.conta-digital-menu__container {
+  display: flex;
+  gap: 69px;
+}
+
+.conta-digital-menu__account {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 270px;
+  align-items: flex-start; /* Alinea los hijos a la izquierda */
+}
+
+.conta-digital-menu__account-image-container {
+  width: 270px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white; /* Añadido para fondos de imagen */
+}
+
+.conta-digital-menu__account-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conta-digital-menu__account-title {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 28px;
+  line-height: 32px;
+  color: #2f2f2f;
+  margin: 0;
+}
+
+.conta-digital-menu__account-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi Bold */
+  font-size: 16px; /* Aumentado a 16px */
+  color: #3483fa;
+  text-decoration: none;
+  white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+.conta-digital-menu__account-link img {
+  width: 16px;
+  height: 16px;
+}
+
+.conta-digital-menu__list {
+  display: flex;
+  flex-grow: 1;
+  gap: 17px; /* Espaciado exacto entre columnas */
+  justify-content: space-between; /* Asegura distribución */
+}
+
+.conta-digital-menu__list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 271px; /* Ancho fijo de las cajas de texto */
+}
+
+.conta-digital-menu__list-title {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 16px;
+  line-height: 20px;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+
+.conta-digital-menu__list-title--disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.conta-digital-menu__product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Reducido para mayor consistencia */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conta-digital-menu__product-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.conta-digital-menu__product-item h4 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.conta-digital-menu__product-item p {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 16px; /* Aumentado a 16px */
+  line-height: 18px;
+  margin: 0;
+}
