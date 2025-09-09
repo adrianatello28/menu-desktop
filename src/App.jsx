@@ -13,6 +13,7 @@ function App() {
     }
   };
 
+  // Render the login screen or the main application
   return isAuthenticated ? <MenuOpenDesktop /> : <LoginScreen onLogin={handleLogin} />;
 }
 
