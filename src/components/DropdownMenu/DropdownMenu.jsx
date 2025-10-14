@@ -5,7 +5,10 @@ import iconShape from '../../assets/chevron-down.svg';
 const DropdownMenu = ({ title, isOpen, onClick }) => {
   return (
     <div className="dropdown-menu">
-      <button className="dropdown-menu__button" onClick={onClick}>
+      <button 
+        className={`dropdown-menu__button ${isOpen ? 'dropdown-menu__button--active' : ''}`} 
+        onClick={onClick}
+      >
         <span className="dropdown-menu__title">{title}</span>
         <img 
           src={iconShape} 

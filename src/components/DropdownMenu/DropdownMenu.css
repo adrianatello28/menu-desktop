@@ -18,6 +18,15 @@
     font-weight: 600;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.9);
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-menu__button:hover {
+    color: #3483fa;
+  }
+  
+  .dropdown-menu__button--active {
+    color: #3483fa;
   }
   
   .dropdown-menu__icon {
