@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ContaNegocioMenu.css';
-import menuNegocioMockup from '../../images/negocio-desktop-mockup.jpg';
+import menuNegocioMockup from '../../images/conta-negocio-menu-image.png';
 import iconRight from '../../images/icon-right.svg';
 
 const containerVariants = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ContaDigitalMenu.css';
-import menuDigitalMockup from '../../images/digital-desktop-mockup.jpg';
+import menuDigitalMockup from '../../images/conta-digital-menu-image.png';
 import iconRight from '../../images/icon-right.svg';
 
 const containerVariants = {
