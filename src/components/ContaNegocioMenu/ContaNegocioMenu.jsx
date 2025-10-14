@@ -44,7 +44,7 @@ const ContaNegocioMenu = () => {
            <div className="conta-negocio-menu__list-section">
              <h3 className="conta-negocio-menu__list-title">Soluções de vendas</h3>
              <ul className="conta-negocio-menu__product-list">
-               <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Maquininhas point</h4></li>
+               <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Maquininhas Point</h4></li>
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Point Tap</h4><p>Venda usando só o celular</p></li>
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Tap to Pay no iPhone</h4><p>Receba por aproximação no iPhone</p></li>
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Link de pagamento</h4></li>
