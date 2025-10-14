@@ -54,32 +54,28 @@ const ContaDigitalMenu = () => {
                </li>
              </ul>
            </div>
-           <div className="conta-digital-menu__list-section">
-             <h3 className="conta-digital-menu__list-title conta-digital-menu__list-title--disabled">Crédito</h3>
-             <ul className="conta-digital-menu__product-list">
-               <li className="conta-digital-menu__product-item">
-                 <h4>Cartão</h4>
-                 <p>Até 18x sem juros</p>
-               </li>
-               <li className="conta-digital-menu__product-item">
-                 <h4>Linha de crédito</h4>
-                 <p>Compras sem cartão</p>
-               </li>
-             </ul>
-           </div>
-           <div className="conta-digital-menu__list-section">
-             <h3 className="conta-digital-menu__list-title conta-digital-menu__list-title--disabled">Serviços</h3>
-             <ul className="conta-digital-menu__product-list">
-               <li className="conta-digital-menu__product-item">
-                 <h4>Pagamentos e tarifas</h4>
-                 <p>Pix e boletos</p>
-               </li>
-               <li className="conta-digital-menu__product-item">
-                 <h4>Seguros</h4>
-                 <p>Proteção para o que importa</p>
-               </li>
-             </ul>
-           </div>
+          <div className="conta-digital-menu__list-section">
+            <h3 className="conta-digital-menu__list-title conta-digital-menu__list-title--disabled">Crédito</h3>
+            <ul className="conta-digital-menu__product-list">
+              <li className="conta-digital-menu__product-item">
+                <h4>Cartão de crédito</h4>
+              </li>
+              <li className="conta-digital-menu__product-item">
+                <h4>Linha de crédito</h4>
+              </li>
+            </ul>
+          </div>
+          <div className="conta-digital-menu__list-section">
+            <h3 className="conta-digital-menu__list-title conta-digital-menu__list-title--disabled">Serviços</h3>
+            <ul className="conta-digital-menu__product-list">
+              <li className="conta-digital-menu__product-item">
+                <h4>Pagamentos e tarifas</h4>
+              </li>
+              <li className="conta-digital-menu__product-item">
+                <h4>Seguros</h4>
+              </li>
+            </ul>
+          </div>
         </motion.div>
       </div>
     </motion.div>
