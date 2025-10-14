@@ -59,7 +59,7 @@ const ContaNegocioMenu = () => {
              <ul className="conta-negocio-menu__product-list">
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Cartão de crédito</h4></li>
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Empréstimos</h4></li>
-               <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Rendimentos e investimentos</h4></li>
+               <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Rendimentos e<br />investimentos</h4></li>
              </ul>
            </div>
            <div className="conta-negocio-menu__list-section">
