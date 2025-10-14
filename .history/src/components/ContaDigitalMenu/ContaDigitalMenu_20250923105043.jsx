@@ -1,13 +1,36 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './ContaDigitalMenu.css';
-import menuDigitalMockup from '../../assets/menu-digital-mockup.png';
+import menuDigitalMockup from '../../images/digital-desktop-mockup.jpg';
 import iconRight from '../../images/icon-right.svg';
+
+const containerVariants = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeInOut" } },
+};
 
 const ContaDigitalMenu = () => {
   return (
-    <div className="conta-digital-menu">
+    <motion.div
+      className="conta-digital-menu"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+    >
       <div className="conta-digital-menu__container">
-        <div className="conta-digital-menu__account">
+        <motion.div className="conta-digital-menu__account" variants={itemVariants}>
            <div className="conta-digital-menu__account-image-container">
              <img src={menuDigitalMockup} alt="Conta Digital Mockup" className="conta-digital-menu__account-image" />
            </div>
@@ -16,8 +39,8 @@ const ContaDigitalMenu = () => {
              Conhecer Conta Digital
              <img src={iconRight} alt="Arrow" />
            </a>
-        </div>
-        <div className="conta-digital-menu__list">
+        </motion.div>
+        <motion.div className="conta-digital-menu__list" variants={itemVariants}>
            <div className="conta-digital-menu__list-section">
              <h3 className="conta-digital-menu__list-title">Rendimentos</h3>
              <ul className="conta-digital-menu__product-list">
@@ -57,9 +80,9 @@ const ContaDigitalMenu = () => {
                </li>
              </ul>
            </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

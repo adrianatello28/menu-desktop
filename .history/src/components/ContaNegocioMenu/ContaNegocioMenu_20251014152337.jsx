@@ -1,13 +1,36 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './ContaNegocioMenu.css';
-import menuNegocioMockup from '../../assets/menu-negocio-mockup.png';
+import menuNegocioMockup from '../../images/conta-negocio-menu-image.png';
 import iconRight from '../../images/icon-right.svg';
+
+const containerVariants = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeInOut" } },
+};
 
 const ContaNegocioMenu = () => {
   return (
-    <div className="conta-negocio-menu">
+    <motion.div
+      className="conta-negocio-menu"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+    >
       <div className="conta-negocio-menu__container">
-        <div className="conta-negocio-menu__account">
+        <motion.div className="conta-negocio-menu__account" variants={itemVariants}>
            <div className="conta-negocio-menu__account-image-container">
              <img src={menuNegocioMockup} alt="Conta Negócio Mockup" className="conta-negocio-menu__account-image" />
            </div>
@@ -16,8 +39,8 @@ const ContaNegocioMenu = () => {
              Conhecer Conta Negócio
              <img src={iconRight} alt="Arrow" />
            </a>
-        </div>
-        <div className="conta-negocio-menu__list">
+        </motion.div>
+        <motion.div className="conta-negocio-menu__list" variants={itemVariants}>
            <div className="conta-negocio-menu__list-section">
              <h3 className="conta-negocio-menu__list-title">Soluções de vendas</h3>
              <ul className="conta-negocio-menu__product-list">
@@ -47,9 +70,9 @@ const ContaNegocioMenu = () => {
                <li className="conta-negocio-menu__product-item"><h4>Developers</h4></li>
              </ul>
            </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

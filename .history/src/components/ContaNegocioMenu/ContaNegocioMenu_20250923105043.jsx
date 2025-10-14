@@ -1,31 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ContaNegocioMenu.css';
-import menuNegocioMockup from '../../assets/menu-negocio-mockup.png';
+import menuNegocioMockup from '../../images/negocio-desktop-mockup.jpg';
 import iconRight from '../../images/icon-right.svg';
 
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeInOut" } },
 };
 
 const ContaNegocioMenu = () => {
   return (
-    <motion.div 
+    <motion.div
       className="conta-negocio-menu"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      exit="hidden"
     >
       <div className="conta-negocio-menu__container">
         <motion.div className="conta-negocio-menu__account" variants={itemVariants}>
