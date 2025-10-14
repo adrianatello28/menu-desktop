@@ -51,6 +51,7 @@ const ContaNegocioMenu = () => {
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Pix</h4></li>
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Checkout para loja virtual</h4></li>
                <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Planos de assinatura</h4></li>
+               <li className="conta-negocio-menu__product-item conta-negocio-menu__product-item--small"><h4>Sistema de gestão</h4></li>
              </ul>
            </div>
            <div className="conta-negocio-menu__list-section">
@@ -65,8 +66,8 @@ const ContaNegocioMenu = () => {
              <h3 className="conta-negocio-menu__list-title conta-negocio-menu__list-title--disabled">Benefícios e PARCEIROS</h3>
              <ul className="conta-negocio-menu__product-list">
                <li className="conta-negocio-menu__product-item"><h4>Mercado Livre Negócios</h4></li>
-               <li className="conta-negocio-menu__product-item"><h4>Ser revendedor Point</h4></li>
-               <li className="conta-negocio-menu__product-item"><h4>Conhecer o Programa de parcerias</h4></li>
+               <li className="conta-negocio-menu__product-item"><h4>Revendedor Point</h4></li>
+               <li className="conta-negocio-menu__product-item"><h4>Programa de parcerias</h4></li>
                <li className="conta-negocio-menu__product-item"><h4>Developers</h4></li>
              </ul>
            </div>
