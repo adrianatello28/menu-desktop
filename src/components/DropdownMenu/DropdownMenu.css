@@ -21,12 +21,12 @@
     transition: color 0.3s ease;
   }
   
-  .dropdown-menu__button:hover {
-    color: #3483fa;
+  .dropdown-menu__button--active {
+    color: rgba(0, 0, 0, 0.9);
   }
   
-  .dropdown-menu__button--active {
-    color: #3483fa;
+  .dropdown-menu__button--inactive {
+    color: rgba(0, 0, 0, 0.55);
   }
   
   .dropdown-menu__icon {

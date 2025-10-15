@@ -42,11 +42,13 @@ export default function MenuOpenDesktop() {
                 <DropdownMenu 
                   title="Conta Digital"
                   isOpen={openMenu === 'digital'}
+                  isInactive={openMenu === 'negocio'}
                   onClick={() => handleMenuToggle('digital')}
                 />
                 <DropdownMenu 
                   title="Conta Negócio"
                   isOpen={openMenu === 'negocio'}
+                  isInactive={openMenu === 'digital'}
                   onClick={() => handleMenuToggle('negocio')}
                 />
               </div>
