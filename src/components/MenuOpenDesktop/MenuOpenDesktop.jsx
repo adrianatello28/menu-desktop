@@ -4,6 +4,7 @@ import './MenuOpenDesktop.css';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
 import ContaDigitalMenu from '../ContaDigitalMenu/ContaDigitalMenu';
 import ContaNegocioMenu from '../ContaNegocioMenu/ContaNegocioMenu';
+import AjudaSegurancaMenu from '../AjudaSegurancaMenu/AjudaSegurancaMenu';
 
 import item22 from '../../assets/item-22.png';
 import logo from '../../assets/logo.svg';
@@ -42,22 +43,25 @@ export default function MenuOpenDesktop() {
                 <DropdownMenu 
                   title="Conta Digital"
                   isOpen={openMenu === 'digital'}
-                  isInactive={openMenu === 'negocio'}
+                  isInactive={openMenu !== null && openMenu !== 'digital'}
                   onClick={() => handleMenuToggle('digital')}
                 />
                 <DropdownMenu 
                   title="Conta Negócio"
                   isOpen={openMenu === 'negocio'}
-                  isInactive={openMenu === 'digital'}
+                  isInactive={openMenu !== null && openMenu !== 'negocio'}
                   onClick={() => handleMenuToggle('negocio')}
+                />
+                <DropdownMenu 
+                  title="Ajuda e Segurança"
+                  isOpen={openMenu === 'ajuda'}
+                  isInactive={openMenu !== null && openMenu !== 'ajuda'}
+                  onClick={() => handleMenuToggle('ajuda')}
                 />
               </div>
             </div>
             <div className="navbar__actions-container">
               <div className="navbar__help-login-container">
-                <div className="header-menu-item">
-                  <a href="#" className="header-menu-item__link">Ajuda</a>
-                </div>
                 <div className="header-menu-item">
                   <button className={`header-menu-item__button header-menu-item__button--login ${isMenuActive ? 'header-menu-item__button--login-active' : ''}`}>
                     Iniciar sessão
@@ -94,6 +98,17 @@ export default function MenuOpenDesktop() {
               style={{ position: 'absolute', top: '72px', left: 0, right: 0, zIndex: 10 }}
             >
               <ContaNegocioMenu />
+            </motion.div>
+          )}
+          {openMenu === 'ajuda' && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              style={{ position: 'absolute', top: '72px', left: 0, right: 0, zIndex: 10 }}
+            >
+              <AjudaSegurancaMenu />
             </motion.div>
           )}
         </AnimatePresence>
