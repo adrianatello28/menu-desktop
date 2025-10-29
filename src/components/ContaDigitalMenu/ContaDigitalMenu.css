@@ -80,7 +80,7 @@
 .conta-digital-menu__list {
   display: flex;
   flex-grow: 1;
-  gap: 17px; /* Espaciado exacto entre columnas */
+  gap: 16px; /* Espaciado exacto entre columnas */
   justify-content: space-between; /* Asegura distribución */
 }
 

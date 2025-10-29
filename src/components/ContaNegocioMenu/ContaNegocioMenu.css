@@ -80,7 +80,7 @@
 .conta-negocio-menu__list {
   display: flex;
   flex-grow: 1;
-  gap: 17px;
+  gap: 16px;
   justify-content: space-between;
 }
 
