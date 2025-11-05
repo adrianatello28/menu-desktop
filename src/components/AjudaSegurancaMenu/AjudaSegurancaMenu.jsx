@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AjudaSegurancaMenu.css';
+import ajudaImagen from '../../images/ajuda-imagen.png';
 import iconRight from '../../images/icon-right.svg';
 
 const containerVariants = {
@@ -31,7 +32,7 @@ const AjudaSegurancaMenu = () => {
       <div className="ajuda-seguranca-menu__container">
         <motion.div className="ajuda-seguranca-menu__account" variants={itemVariants}>
            <div className="ajuda-seguranca-menu__account-image-container">
-             {/* Placeholder gris hasta que esté lista la imagen */}
+             <img src={ajudaImagen} alt="Ajuda e Segurança" className="ajuda-seguranca-menu__account-image" />
            </div>
            <p className="ajuda-seguranca-menu__account-title">Como podemos te ajudar?</p>
            <a href="#" className="ajuda-seguranca-menu__account-link">
@@ -84,4 +85,5 @@ const AjudaSegurancaMenu = () => {
 };
 
 export default AjudaSegurancaMenu;
+
 
